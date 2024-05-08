@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real time Translator</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <div class="main">
+        
+  
+        
+        <div class="center">
+            <div class="translate-property">
+                <ul class="lang-item">
+                    <li>
+                        <select id="source-language">
+                            
+                        </select>
+                    </li>
+                    <li><img id="svg-transfer" src="./images/transfer-svgrepo-com.svg" alt="transfer"></li>
+                    <li>
+                        <select id="target-language">
+                           
+                            
+                        </select>
+                    </li>
+                </ul>
+            
+            </div>
+           
+            <div class="wrapper">
+                <div class="left">
+                    <div class="prop-left">
+                        <textarea name="" placeholder="Enter Text you want to translate" class="from-text" maxlength="5000"  id=""></textarea>
+                        <div class="icons">
+                            <span><img src="./images/file-copy-line.svg" alt="" ></span>
+                            <div class="text-length">
+                                <h4>0/5000</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="right">
+                    <div class="prop-right">
+                        <textarea name="" placeholder="Translated text will appear here" disabled class="to-text" maxlength="5000"  id=""></textarea>
+                        <div class="icons">
+                            <span><img src="./images/file-copy-line.svg" alt="" ></span>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <button id="translate-button">Translate</button>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
